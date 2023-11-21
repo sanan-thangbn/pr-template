@@ -2,42 +2,43 @@
 
 ## Component
 
-- [ ]  Kiểm tra xem CSS có đang bị ghi đè lên layout gốc mà không tùy chỉnh component hiện tại
-- [ ]  Tạo dummy data cho các component để hỗ trợ việc hiển thị sample
-- [ ]  Tái sử dụng những component đã tồn tại
-- [ ]  Kiểm tra tính đồng nhất giữa component và thiết kế (figma)
-- [ ]  Kiểm tra inject event giao tiếp giữ parent & child component. Dùng console.log() để hiển thị việc thực hiện thành công event
-- [ ]  Nếu component phức tạp có thể chia nhỏ
-- [ ]  Nếu sử dụng thư viện ngoài trong trường hợp install mới so với thư viện hiện có của khách:
-    - [ ]  Kiểm tra xem thư viện còn được hỗ trợ từ nhà điều hành không
-    - [ ]  Kiểm tra license có sẵn cho mục đích thương mại hay không
+- [ ]  Check if CSS is being overwritten on the original layout without customizing the current component
+- [ ]  Create dummy data for components to support sample display
+- [ ]  Reuse existing components
+- [ ]  Check consistency between component and design (figma)
+- [ ]  Check inject event communication between parent & child component.
+- [ ]  Use console.log() to display the successful execution of the event
+- [ ]  Break down complex components into smaller components
+- [ ]  If using an external library in case of a new install compared to the client's existing library:
+    - [ ]  Check if the library is still supported by the operator
+    - [ ]  Check for available licenses for commercial use
 
 ## HTML
 
-- [ ]  Kiểm tra với markupLint
-- [ ]  Kiểm tra cấu trúc ngữ nghĩa của các thành phần
-- [ ]  Không được đặt CSS inline
-- [ ]  Kiểm tra trùng lặp ID
+- [ ]  Test with markupLint
+- [ ]  Check the semantic structure of the components
+- [ ]  Do not place CSS inline
+- [ ]  Check for duplicate IDs
 
 ## CSS
 
-- [ ]  Sử dụng Slot để tạo các lớp cục bộ
-- [ ]  Khi tạo util class phải follow theo quy tắc giãn cách khoảng trắng
-- [ ]  Bạn đã follow theo quy tắc BEM chưa
-- [ ]  Kiểm tra xem có styles không sử dụng nào không ?
-- [ ]  Đặt tên class name có match với component naming từ figma
+- [ ]  Use Slot to create local layers
+- [ ]  When creating a util class, you must follow the white space spacing rule
+- [ ]  Check class naming according to BEM rules
+- [ ]  Check for unused styles
+- [ ]  Set a class name that matches the component naming from figma
 
 ## CODE
 
-- [ ]  Kiểm tra xem bị lặp IDS không?
-- [ ]  Customize component phải check ảnh hưởng của nó tới các thành phần khác (Kiểm tra hàng ngang)
-- [ ]  Kiểm tra lỗi chính tả
-- [ ]  commit / push phải trực quan các action thực hiện
-- [ ]  Loại bỏ những câu lệnh không cần thiết
-- [ ]  Loại bỏ comment code
-- [ ]  Kiểm tra cách đặt tên biến, tên hàm (không sử dụng từ viết tắt)
-- [ ]  Loại bỏ console.log để gỡ lỗi
-- [ ]  Kiểm tra lỗi và warnning trong trình duyệt
-- [ ]  Các EventListener có được xóa đúng các chưa? tránh hiện thực memories leak
-- [ ]  Sử dụng let thay vì sử dụng keyword var để khai báo biến
-- [ ]  Không sử dụng biến toàn cục, sử dụng biến cục bộ với phạm vi nhỏ nhất càng tốt
+- [ ]  Check duplicate ID
+- [ ]  Check the impact of custom components
+- [ ]  Check for spelling errors
+- [ ]  Commit / push must be intuitive in the actions performed
+- [ ]  Eliminate unnecessary commands
+- [ ]  Remove commented code
+- [ ]  Check the naming of variables and function names (do not use acronyms)
+- [ ]  Remove console.log for debugging
+- [ ]  Check for errors and warnings in the browser
+- [ ]  Check EventListener initialization and destruction
+- [ ]  Use let instead of using the var keyword to declare variables
+- [ ]  Don't use global variables, use local variables with the smallest possible scope
